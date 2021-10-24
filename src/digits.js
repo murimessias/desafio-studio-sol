@@ -1,3 +1,10 @@
+/*
+  Arquivo com um objeto com os dados em SVG para cada dígito. Foi passado a
+  propriedade "fill='currentColor'" para quando for passado uma cor para o a
+  uma "div" que envolva o SVG a cor para cada segmento com a 'currentColor'
+  corresponda ao número passado pelo usuário. Também foi exportado o objeto
+  para ser utilizado em outro arquivo.
+*/
 export const digits = {
   empty: `
     <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 100">
