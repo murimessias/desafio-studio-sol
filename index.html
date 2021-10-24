@@ -8,34 +8,46 @@
   </head>
 
   <body>
-    <main>
-      <div>
-        <h1>Qual é o número?</h1>
-      </div>
+    <main class="grid">
+      <section class="title-container">
+        <h1 class="title">Qual é o número?</h1>
+      </section>
 
-      <div>
-        <div data-js="game-container">
-          <div
-            style="width: 180px; display: flex"
-            data-js="number-container"
-          ></div>
+      <section class="game-wrapper">
+        <div class="game-container" data-js="game-container">
+          <div class="number-container" data-js="number-container"></div>
         </div>
-        <button disabled="disabled" data-js="reset-button">Nova partida</button>
-      </div>
+
+        <button
+          class="reset-button"
+          disabled="disabled"
+          data-js="reset-button"
+          aria-hidden="true"
+        >
+          Nova partida
+        </button>
+      </section>
 
       <section>
-        <form data-js="form">
-          <div>
-            <label for="number">Digite seu número</label>
+        <form class="form-container" data-js="form">
+          <div class="form-input">
+            <label for="number"></label>
             <input
-              type="number"
+              data-js="input"
               name="number"
               placeholder="Digite o palpite"
-              data-js="input"
+              type="number"
             />
           </div>
 
-          <button type="submit" data-js="form-button">Enviar</button>
+          <button
+            class="form-button"
+            data-js="form-button"
+            disabled="disabled"
+            type="submit"
+          >
+            Enviar
+          </button>
         </form>
       </section>
     </main>
