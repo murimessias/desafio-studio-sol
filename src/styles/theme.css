@@ -36,7 +36,7 @@ body {
 
 svg {
   height: 13.6rem;
-  width: 100%;
+  width: 7.2rem;
 }
 
 .active {
@@ -172,6 +172,7 @@ svg {
 .form-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .form-button {
@@ -215,6 +216,11 @@ input {
   font-size: var(--font-size-xs);
   padding-left: 1.4rem;
   width: 100%;
+}
+
+input:focus {
+  border: 1px solid var(--color-orange-500);
+  outline: none;
 }
 
 input:focus-visible {

@@ -49,11 +49,12 @@ body {
   }
 
   svg {
-    height: 18rem;
+    height: 17.6rem;
+    width: 11.2rem;
   }
 
   .grid {
-    min-height: 64rem;
+    min-height: 40rem;
   }
 }
 
