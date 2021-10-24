@@ -67,7 +67,7 @@ svg {
   min-height: 100vh;
 
   grid-template:
-    'title' 12rem
+    'title' 8rem
     'game' 1fr
     'form' 8rem
     / 0.88fr;
