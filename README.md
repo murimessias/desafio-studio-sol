@@ -1,15 +1,4 @@
-<h1 align="center">
-  <img alt="moveit" title="moveit" src="public/logo-full.svg" width="220px" />
-</h1>
-
-<p align="center">
- <a href="#-about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
- <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-tech">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-license">Licença</a>
-</p>
-
-<img src="./assets/dev-readme.png" />
+<img src="./.github/readme-img.jpg" />
 
 ## 💻 Sobre
 
