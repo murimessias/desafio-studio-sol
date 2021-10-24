@@ -37,3 +37,34 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.6rem;
 }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 83.25%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    height: 18rem;
+  }
+
+  .grid {
+    min-height: 64rem;
+  }
+}
+
+@media screen and (min-width: 956px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 120%;
+  }
+}

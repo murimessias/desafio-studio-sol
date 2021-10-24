@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -8,7 +8,50 @@
   </head>
 
   <body>
-    <div data-js="app"></div>
+    <main class="grid">
+      <section class="title-container">
+        <h1 class="title">Qual é o número?</h1>
+      </section>
+
+      <section class="game-wrapper">
+        <div class="game-container" data-js="game-container">
+          <div class="number-container" data-js="number-container"></div>
+        </div>
+
+        <button
+          class="reset-button"
+          disabled="disabled"
+          data-js="reset-button"
+          aria-hidden="true"
+        >
+          Nova partida
+        </button>
+      </section>
+
+      <section>
+        <form class="form-container" data-js="form">
+          <div class="form-input">
+            <label for="number"></label>
+            <input
+              data-js="input"
+              name="number"
+              placeholder="Digite o palpite"
+              type="number"
+            />
+          </div>
+
+          <button
+            class="form-button"
+            data-js="form-button"
+            disabled="disabled"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
