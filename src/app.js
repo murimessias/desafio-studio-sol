@@ -131,8 +131,13 @@ const createMessage = (message, status) => {
   div.setAttribute('class', 'message')
   gameContainer.prepend(div)
 
-  status === 'success' && div.classList.add('success')
-  status === 'error' && div.classList.add('error')
+  if (status === 'success') {
+    div.classList.add('success')
+  }
+
+  if (status === 'error') {
+    div.classList.add('error')
+  }
   return div
 }
 
@@ -167,15 +172,12 @@ const compareNumbers = (user, sort) => {
     clearGameContainer()
   }
 
-  if (user === 0) {
-    return
-  }
-
   if (user === sort) {
+    numberContainer.classList.add('success')
+    resetButton.classList.toggle('visible')
     createMessage('Você acertou!!!', 'success')
     addDisabledAttribute(formButton, input)
     removeDisabledAttribute(resetButton)
-    resetButton.classList.toggle('visible')
   }
 
   if (user > sort) {
@@ -205,6 +207,11 @@ const playGame = (event) => {
 
   /* Desestruturação da variável number */
   const { sort, user } = number
+
+  if (user === 0) {
+    return
+  }
+
   compareNumbers(sort, user)
   createDigits(userNumber)
 
