@@ -21,15 +21,13 @@ Siga os seguintes passos para poder utilizar a aplicação em sua máquina.
 1. 🧬 Clone a aplicaçã em sua máquina local com os seguintes comandos:
 
 ```
-git clone https://github.com/murimessias/markee.git
-
+git clone https://github.com/murimessias/desafio-studio-sol.git
 ```
 
 2. Depois, vá até o diretório do seu projeto utilizando o comando
 
 ```bash
-cd markee-app
-
+cd desafio-studio-sol
 ```
 
 3. Instale as dependências:
@@ -47,7 +45,3 @@ npm run dev
 # ou
 yarn dev
 ```
-
-## 🖊️ Licença
-
-O projeto é licenciado sobre a "MIT License" - Veja a pagina LICENÇA para mais destalhes.
